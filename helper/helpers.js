@@ -1,7 +1,11 @@
-var helpers = {};
+(function() {
 
-helpers.myHelper = function(input) {
-  return "<!-- " + input + " -->";
-};
+  module.exports.register = function(Handlebars, options) {
 
-module.exports = exports = helpers;
+    Handlebars.registerHelper('myHelper', function(input) {
+      return "<!-- " + input + " -->";
+    });
+
+  };
+
+}).call(this);

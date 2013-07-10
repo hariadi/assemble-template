@@ -30,10 +30,7 @@ module.exports = function(grunt) {
           'src/templates/partials/{,*/}*.hbs',
           'src/content/*.hbs'
         ],
-        registerFunctions: function(engine) {
-          var helpers = require('./helper/helpers');
-          engine.engine.registerFunctions(helpers);
-        }
+        helpers: 'helper/helpers.js'
       },
 
       site: {
