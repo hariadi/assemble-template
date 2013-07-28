@@ -1,122 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="dist/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="dist/assets/css/style.css" rel="stylesheet">
-    <link href="dist/assets/css/pygments-manni.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="dist/assets/js/html5shiv.js"></script>
-      <script src="dist/assets/js/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <title>web | My Blog</title>
+    <link rel="stylesheet" href="dist/assets/assemble.css">
+    <link rel="stylesheet" href="dist/assets/github.css">
   </head>
   <body>
-    <!-- nav partial -->
-    <div class="navbar">
-  <div class="container">
 
-    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-
-    <a class="navbar-brand" href="index.html">Generator Assemble</a>
-
-    <div class="nav-collapse collapse navbar-responsive-collapse">
-      <ul class="nav navbar-nav">
-        <li>
-          <a href="dist/docs.html">Docs</a>
-        </li>
-        <li>
-          <a href="dist/examples.html">Examples</a>
-        </li>
-        <li>
-          <a href="dist/markdown.html">Markdown</a>
-        </li>
-        <li>
-          <a href="dist/blog.html">Blog</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav pull-right">
-        <li><a href="https://github.com/hariadi/generator-assemble">Generator</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Assemble <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://github.com/assemble/assemble-examples">More Examples</a> </li>
-            <li class="divider"></li>
-            <li><a href="https://github.com/assemble/assemble/">Visit Assemble</a> </li>
-          </ul>
-        </li>
-      </ul>
-
-    </div><!-- /.nav-collapse -->
-  </div><!-- /.container -->
-</div><!-- /.navbar -->
-
-
+    <!-- Navbar 
+    ================================================== -->
+    
+<!-- Navbar component
+================================================== -->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
     <div class="container">
-      <!-- body partial, used for adding pages to layout -->
+      <a class="navbar-brand" href="dest/index.html">ASSEMBLE</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="nav-collapse collapse bs-navbar-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li>
+            <a href="dest/blog.html">Blog</a>
+          </li>
+          <li> <a href="https://github.com/upstage/mixins/">GitHub Repo</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Subhead
+    ================================================== -->
+    <header class="masthead subhead">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-12">
+            <h1> WEB </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page content
+    ================================================== -->
+    <div class="container">
       
 
-<h1><a href="https://github.com/hariadi/generator-assemble">generator-assemble v0.3.1</a> <a href="https://travis-ci.org/hariadi/generator-assemble"><img src="https://travis-ci.org/hariadi/generator-assemble.png" alt="Build Status"></a></h1>
-<blockquote>
-<p><a href="http://yeoman.io/">Yeoman</a> generator for <a href="https://github.com/assemble/assemble/">Assemble</a>. Demonstrates how to build a basic static site with Assemble. Example includes layouts, pages, partials, and markdown content.</p>
-</blockquote>
-<h2>Getting started</h2>
-<ul>
-<li><code>mkdir project &amp;&amp; cd project</code></li>
-<li>Make sure you have <a href="https://github.com/yeoman/yo">yo</a> installed:
-  <code>npm install -g yo</code></li>
-<li>Install the generator:
-  <code>npm install generator-assemble</code> [-g]</li>
-<li>Run:
-  <code>yo assemble</code></li>
-</ul>
-<h2>Options</h2>
-<ul>
-<li><p><code>--skip-install</code></p>
-<p>Skips the automatic execution of <code>bower</code> and <code>npm</code> after
-scaffolding has finished.</p>
-</li>
-<li><p><code>--silent</code></p>
-<p>Skips welcome message.</p>
-</li>
-</ul>
-<h2>Contributing</h2>
-<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Use <a href="https://github.com/assemble/assemble/">Assemble</a> to build and maintain your gh-pages, blog or documentation. Lint and test your code using <a href="http://gruntjs.com/">Grunt</a>.</p>
-<h2>Authors</h2>
-<ul>
-<li><a href="http://github.com/hariadi">Hariadi Hinta</a></li>
-</ul>
-<h2>Release History</h2>
-<ul>
-<li>2013-06-12      v0.2.1      Update Assemble example basic, custom helpers, examples and documentation.  Update repo description.</li>
-<li>2013-03-01      v0.1.1      Adds Assemble README example.  Adds Assemble Sitemap example.  Uses templates/data and partials for sections.</li>
-<li>2013-02-28      v0.1.0      First commit. Copy from assemble-example-basic</li>
-</ul>
-<h2>Roadmap</h2>
-<ul>
-<li>No date     v1.0.0      Complete site builder task</li>
-<li>2013-05-01      v0.2.0      Refactor  Use custom helpers.</li>
-</ul>
-<hr>
-<p>Project by <a href="http://github.com/hariadi/">Hariadi Hinta</a></p>
-<p><em>This file was generated using the <a href="https://github.com/assemble/assemble/">Assemble</a> Grunt.js plugin, on Wed Jun 12 2013 20:28:41 GMT+0800 (Malay Peninsula Standard Time).</em></p>
+<h1> WEB </h1>
+<p class="lead"> Welcome to my blog! </p>
 
-
-
-
-
-
-      <script src="dist/assets/js/jquery.js"></script>
-      <script src="dist/assets/js/bootstrap.min.js"></script>
-      <script src="dist/assets/js/highlight.js"></script>
     </div>
+
+    <script src="dist/assets/js/highlight.js"></script>
   </body>
 </html>

@@ -18,11 +18,11 @@
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "grunt assemble"
+    "test": "grunt"
   },
   "devDependencies": {
     "grunt-contrib-clean": "~0.4.1",
-    "assemble": "~0.4.0",
+    "assemble": "~0.4.2",
     "grunt": "~0.4.1"
   },
   "licenses": [
